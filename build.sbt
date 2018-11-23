@@ -59,7 +59,8 @@ lazy val macros = crossProject(JSPlatform, JVMPlatform)
       "org.scala-lang.modules" %%% "scala-xml" % scalaXMLVersion,
       "io.circe" %% "circe-jawn" % circeVersion,
       "io.circe" %% "circe-yaml" % circeYamlVersion,
-      "org.scala-lang" % "scala-reflect" % scalaVersion.value
+      "org.scala-lang" % "scala-reflect" % scalaVersion.value,
+      "org.scalatest" %%% "scalatest" % scalatestVersion % "test"
     )
   )
   .jsSettings(
